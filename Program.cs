@@ -1,3 +1,6 @@
+using cherry_blossom.CustomMiddleware;
+using cherry_blossom.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +20,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseMyMiddleware();
 
 
 app.MapControllerRoute(

@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+
 namespace cherry_blossom.DependencyInjection;
 public class ConsoleWriter : IConsoleWriter
 {
