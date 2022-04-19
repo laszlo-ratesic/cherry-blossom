@@ -9,4 +9,6 @@ public class AppDataContext : DbContext
     {
 
     }
+
+    public DbSet<Library> Libraries { get; set; }
 }
